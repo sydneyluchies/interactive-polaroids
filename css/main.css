@@ -1,6 +1,5 @@
 html {
   background-color: #e2e2e2;
-
   font-family: sans-serif;
 }
 
@@ -12,6 +11,8 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  transition: all .2s linear;
+  position: absolute;
 }
 
 .polaroid > img {
@@ -25,7 +26,6 @@ html {
 }
 
 .polaroid:first-child {
-  position: absolute;
   top: 35%;
   left: 30%;
   margin-right: -50%;
@@ -33,7 +33,6 @@ html {
 }
 
 .polaroid:nth-child(2) {
-  position: absolute;
   top: 45%;
   left: 40%;
   margin-right: -50%;
@@ -41,7 +40,6 @@ html {
 }
 
 .polaroid:last-child {
-  position: absolute;
   top: 35%;
   left: 50%;
   margin-right: -50%;
