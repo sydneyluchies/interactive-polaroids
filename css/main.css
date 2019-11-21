@@ -26,26 +26,41 @@ html {
 }
 
 .polaroid:first-child {
-  top: 35%;
+  top: 15%;
   left: 30%;
   margin-right: -50%;
   transform: rotate(-15deg);
 }
 
 .polaroid:nth-child(2) {
-  top: 45%;
+  top: 25%;
   left: 40%;
   margin-right: -50%;
   transform: rotate(5deg);
 }
 
-.polaroid:last-child {
-  top: 35%;
+.polaroid:nth-child(3) {
+  top: 15%;
   left: 50%;
   margin-right: -50%;
   transform: rotate(40deg);
 }
 
-.polaroid:hover {
+.polaroid:nth-child(3):hover {
   transform: rotate(0deg);
+  z-index: 1;
+}
+
+.polaroid:nth-child(2):hover {
+  transform: rotate(0deg);
+  z-index: 1;
+}
+
+.polaroid:first-child:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+}
+
+.polaroid:hover {
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5));
 }
